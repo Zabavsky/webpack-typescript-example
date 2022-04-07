@@ -8,6 +8,12 @@ export interface ISelectItem {
     options?: HTMLSelectElement[];
 }
 
+export const ELMapper = {
+    '10': 'Segma',
+    'PI': 'Foo',
+    '60': '3',
+};
+
 export type LevelMapper = {level: number, selectRef: any, graphItems: ISelectItem[]};
 
 export const GRAPH_ITEMS: ISelectItem[] = [
