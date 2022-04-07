@@ -10,22 +10,37 @@
 </head>
 <body>
 
-    <select name="first" id="select-first">
+<div class="select-level">
+    <select name="s1" id="select_1" data-level="0" data-parent="A">
         <option value="">--Please choose an option--</option>
-        <option value="dog">Dog</option>
+    </select>
+</div>
+
+<div class="select-level">
+    <select name="s2" id="select_2" data-level="0" data-parent="B">
+        <option value="">--Please choose an option--</option>
     </select>
 
-    <select name="second" id="select-second">
+    <select name="s3" id="select_3" data-level="1" data-parent="10">
         <option value="">--Please choose an option--</option>
-        <option value="dog">Dog</option>
     </select>
 
-    <select name="third" id="select-third">
+    <select name="s4" id="select_4" data-level="2" data-parent="PI">
         <option value="">--Please choose an option--</option>
-        <option value="dog">Dog</option>
+    </select>
+</div>
+
+<div class="select-level">
+    <select name="s5" id="select_5" data-level="0" data-parent="C">
+        <option value="">--Please choose an option--</option>
     </select>
 
+    <select name="s6" id="select_6" data-level="1" data-parent="60">
+        <option value="">--Please choose an option--</option>
+    </select>
 
-    <script src="/main.bundle.js"></script>
+</div>
+
+<script src="/main.bundle.js"></script>
 </body>
 </html>
