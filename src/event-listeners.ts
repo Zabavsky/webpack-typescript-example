@@ -33,7 +33,9 @@ export class EventListeners {
         if (hasDisableAttribute && !hasDependency) {
             e.removeAttribute('disabled');
         } else {
-            e.setAttribute('disabled', 'disabled');
+            if (e) {
+                e.setAttribute('disabled', 'disabled');
+            }
         }
     }
 }
