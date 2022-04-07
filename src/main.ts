@@ -1,5 +1,5 @@
 import {GRAPH_ITEMS, LevelMapper} from './constants';
-import {getSelectByDataAttribute, getSelectRef} from "./helpers";
+import {getSelectByDataAttribute, getSelectRef} from './helpers';
 
 const selectMapper = new Map<number, LevelMapper[]>();
 
@@ -34,7 +34,7 @@ function attachOptionsToSelects(): void {
             _select.graphItems.forEach((_itm, _idx) => {
                 _select.selectRef.add(
                     new Option(_itm.text.toString(), _itm.value.toString(), _itm.selected)
-                )
+                );
             });
         });
     });

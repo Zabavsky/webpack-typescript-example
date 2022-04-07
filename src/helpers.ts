@@ -1,4 +1,4 @@
-import {ISelectItem} from "./constants";
+import {ISelectItem} from './constants';
 
 export function sortBy(arr: ISelectItem[], value: string): ISelectItem[] {
     // @ts-ignore

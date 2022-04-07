@@ -5,16 +5,10 @@ export interface ISelectItem {
     parentId: number | string;
     nestedId: number | string;
     selected: boolean;
-    options?: HTMLSelectElement[]
+    options?: HTMLSelectElement[];
 }
 
 export type LevelMapper = {level: number, selectRef: any, graphItems: ISelectItem[]};
-
-export type SelectDependencyType = {
-    10: 'Segma'
-    'PI': 'Foo'
-    60: 3
-};
 
 export const GRAPH_ITEMS: ISelectItem[] = [
     {text: 'A', value: 'A', level: 0, nestedId: null, parentId: 0, selected: false},
